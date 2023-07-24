@@ -1,0 +1,950 @@
+@font-face {
+    font-family: chloe ;
+    src: url(/chloe-regular.ttf);
+}
+
+@font-face {
+    font-family: mont;
+    src: url(/montserrat_n3.e9c2ec7697570c33b13645dbd15f3f729c5e921b.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@500&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    padding: 1.5vmax 1.5vmax 2vmax 2vmax;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #94ADD7;
+    color: white;
+}
+nav #last i{
+    display: none;
+}
+
+nav h1{
+    font-size: 2.85vmax;
+    font-family: 'Tektur', cursive;
+    letter-spacing: 0.2vmax;
+    margin-left: 7vmax;
+}
+
+nav h1:hover{
+    cursor: pointer;
+}
+
+nav #menu{
+    position: relative;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1vmax;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.1vmax;
+    margin-left: 7vmax;
+}
+
+nav #menu h4:hover{
+    cursor: pointer;
+}
+
+nav #menu h4::after{
+    width: 0;
+    content: '';
+    display: block;
+    height: 0.1vmax;
+    background-color: white;
+    transition: width .3s;
+    margin-top: 0.5vmax;
+}
+
+nav #menu h4:hover::after{
+    width: 100%;
+    transition: width .3s;
+    cursor: pointer;
+}
+
+@media(max-width:400px){
+    nav #menu{
+        display: none;
+    }
+    nav{
+        justify-content: space-between;
+        padding: 3vmax 3vmax 1.5vmax 1.5vmax;
+    }
+
+    nav h1{
+        font-size: 2.7vmax;
+        margin-left: 2vmax;
+    }
+
+    nav #last i{
+        display: block;
+    }
+
+    nav #icons{
+        gap: 2vmax;
+
+    }
+
+    nav #icons i{
+        font-size: 2.3vmax;
+    }
+
+    nav #last i{
+        font-size: 2.3vmax ;
+    }
+    
+    #topmost{
+        font-size: 1.8vmax;
+        padding: 0.8vmax;
+        line-height: 3vmax;
+        letter-spacing: 0.2vmax;
+        font-weight: 100;
+    }
+}
+
+nav #icons{
+    font-size: 1.6vmax;
+    /* width: 10%; */
+    gap: 2.2vmax;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 7vmax;
+}
+
+nav #icons i:hover{
+    cursor: pointer;
+}
+
+#page1a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#page1{
+    width: 90%;
+    height: 40vmax;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(https://www.pixelstalk.net/wp-content/uploads/images1/Desktop-Floor-Pictures.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vmax;
+}
+
+#page1 h1{
+    margin-top: 1vmax;
+    margin-left: 6vmax;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-weight: 200;
+    color: white;
+    font-size: 6vmax;
+    -webkit-text-stroke: 0.1vmax #A0BFE0;
+}
+@media(max-width:400px){
+    #page1 h1{
+        font-size: 4.7vmax;
+
+    }
+    #page1 #btn{
+        margin-left: 29vmax;
+        gap: 0.2vmax;
+    }
+    #page1 #btn #l button{
+        font-size: 2vmax;
+    }
+    #page1 #btn #r button{
+        font-size: 2vmax;
+    }
+}
+
+#page1 #btn{
+    display: flex;
+    gap: 3vmax;
+    margin-top: 4vmax;
+    margin-right: 1.4vmax; 
+    font-family: 'Raleway', sans-serif;
+   
+}
+
+#page1 #btn #l button{
+    border: 00.5vmax solid rgb(148,173,215);
+    background-color: rgb(148,173,215);
+    color: white;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    font-weight: 200;
+    padding-left: 2.5vmax;
+    padding-top: 0.7vmax;
+    padding-bottom: 0.7vmax;
+    padding-right: 0.7vmax;
+    font-size: 1vmax;
+    transition: all ease 0.1s;
+}
+
+#page1 #btn #r button{
+    border: 00.5vmax solid rgb(148,173,215);
+    background-color: rgb(148,173,215);
+    color: white;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    font-weight: 200;
+    padding-left: 0.7vmax;
+    padding-top: 0.7vmax;
+    padding-bottom: 0.7vmax;
+    padding-right: 2.5vmax;
+    font-size: 1vmax;
+    transition: all ease 0.1s;
+}
+
+#page1 #btn button:hover{
+    cursor: pointer;
+    scale: 1.3;
+}
+
+#pageb{
+    width: 100%;
+    padding: 5vmax;
+}
+
+@media(max-width:400px){
+    #pageb #img1{
+        display: flex;
+        flex-direction: column;
+    }
+    #pageb #img2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #pageb img{
+        width: 100%;
+        margin-left: 10.5vmax;
+    }
+}
+
+#pageb #text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vmax;
+    text-align: center;
+}
+
+#pageb #text h1{
+    font-family: chloe;
+    color: rgb(120,149,203);
+    font-weight: 400;
+    font-size: 4vmax;
+}
+
+#pageb #text p{
+    font-family: 'Raleway', sans-serif;
+    color: rgb(120,149,203);
+    font-weight: 600;
+    line-height: 2.2vmax;
+    padding: 3vmax;
+    font-size: 1.3vmax;
+    letter-spacing: 0.1vmax;
+
+}
+
+#pageb img{
+    width: 20vmax;
+}
+
+#pageb #img1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 4vmax;
+}
+
+#pageb #img2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7vmax;
+    gap: 4vmax;
+    
+
+}
+
+
+
+#page3{
+    width: 100%;
+    /* height: 70vmax; */
+    background-color: rgb(148,173,215);
+    overflow: hidden;
+}
+
+#page3 h4{
+    font-size: 3.5vmax;
+    font-family: "chloe";
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 6vmax;
+}
+
+#page3 h6{
+    font-size: 1.3vmax;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+   
+    margin-top: 2vmax;
+}
+
+#page3 #shop{
+    padding: 2vmax;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-top: 3vmax;
+    margin-left: 5vmax;
+    
+}
+#page3 #shop::-webkit-scrollbar{
+    display: none;
+}
+
+
+ #page3 #shop .items{
+    
+    width: 40vmax;
+    height: 45vmax;
+    /* background-color: red; */
+    /* border-radius: 50%; */
+    display: inline-block;
+    /* border: 1px solid white; */
+    overflow: hidden;
+    margin-right: 3vmax;
+    border: 0.15vmax solid white;
+
+}
+
+
+
+
+ #page3 #shop .items img{
+    width: 40vmax;
+    height: 30vmax;
+    object-fit: cover;
+    /* object-position: initial; */
+    transition: all ease 2s;
+    
+}
+
+#page3 #shop .items img:hover{
+    cursor: pointer;
+}
+
+#page3 #shop .items .text h3{
+    padding: 1.3vmax 0 0 0;
+    text-align: center;
+    font-family: 'Tektur', cursive;
+    color: white;
+    font-weight: 100;
+    font-size: 2vmax;
+    letter-spacing: 0.1vmax;
+
+}
+#page3 #shop .items .text h3:hover{
+    /* color: rgb(167,181,208); */
+    /* -webkit-text-stroke: 0.1px black; */
+    cursor: pointer;
+}
+
+#page3 #shop .items .text h5{
+    padding: 1vmax 0 0 0;
+    letter-spacing: 0.1vmax;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: 700;
+
+}
+
+#page3 #shop .items .text h6{
+    letter-spacing: 0.1vmax;
+    margin-top: 1vmax;
+    font-size: 1vmax;
+    text-align: center;
+    font-family: "mont";
+    color: white;
+    font-weight: 100;
+
+}
+
+#page3 #shop .items .text span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aquamarine; */
+    gap: 1.2vmax;
+    padding-top: 2vmax ;
+}
+
+#page3 #shop .items .text span #h1{
+    border: 1vmax solid rgb(255,201,95);    
+}
+
+#page3 #shop .items .text span #h2{
+    border: 1vmax solid rgb(80,145,147);    
+}
+
+#page3 #shop .items .text span #h3{
+    border: 1vmax solid rgb(199,160,135);    
+}
+
+#page3 #shop .items .text span #h4{
+    border: 1vmax solid rgb(151,216,62);    
+}
+
+#page3 #shop .items .text span #h5{
+    border: 1vmax solid rgb(193,141,67);    
+}
+
+#page3 #shop .items .text span #h6{
+    border: 1vmax solid rgb(118,217,247);    
+}
+
+#page3 #shop .items .text span:hover{
+    cursor: pointer;
+}
+
+#logos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 7vmax;
+    overflow: hidden;
+    /* background-color: aqua; */
+}
+
+#logos img{
+    width: 14vmax;
+}
+
+#logos #one{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vmax;
+    padding-top: 6vmax;
+    flex-direction: column;
+
+}
+
+
+#logos #two{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vmax;
+}
+
+#logos #two h1{
+    color:white;
+    -webkit-text-stroke: 0.1vmax rgb(148,173,215);
+    font-family: 'Tektur', cursive;
+    letter-spacing: 0.2vmax;
+    font-size: 2.5vmax;
+}
+
+#page5{
+    padding-top: 10vmax;
+    padding-left: 2vmax;
+    padding-right: 2vmax;
+    padding-bottom: 10vmax;
+    width: 100%;
+    /* height: 45vh; */
+    color:  rgb(10,110,189);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5vmax;
+    font-family: 'Raleway', sans-serif;
+    flex-direction: column;
+    text-align: center;
+    line-height: 4vmax;
+    font-weight: 100;
+    letter-spacing: 0.1vmax;
+    overflow: hidden;
+}
+
+
+
+@media(max-width:400px){
+    #logos{
+        gap: 8vmax;
+    }
+    #logos img{
+        width: 14vmax;
+    }
+    #logos #one{
+        flex-direction: column;
+        gap: 8vmax;
+    }
+    #logos #two{
+        flex-direction: column;
+        gap: 8vmax;
+    }
+}
+
+#page6{
+    width: 100%;
+    padding: 10vmax;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#page6 #top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#page6 #bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5vmax;
+}
+
+#page6 #top #one{
+    width: 30%;
+    height: 22vmax;
+    background-color: aqua;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.wakefit.co/blog/wp-content/uploads/2021/10/Artboard-15.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#page6 #top #two{
+    width: 30%;
+    height: 22vmax;
+    background-color: aqua;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm405-e07-mockup_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=a228de2e6b0ef5c460b6992d5e0c42d7);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#page6 #top #three{
+    width: 30%;
+    height: 22vmax;
+    background-color: aqua;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://images.unsplash.com/photo-1602872030490-4a484a7b3ba6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGRpbmluZyUyMHJvb20lMjB0YWJsZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80 );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#page6 #bottom #one{
+    width: 30%;
+    height: 22vmax;
+    background-color: aqua;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://flippers.co.za/wp-content/uploads/Snapinsta.app_1080_322121275_484255717223539_6333504529099423450_n-500x500.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#page6 #bottom #two{
+    width: 30%;
+    height: 22vmax;
+    background-color: aqua;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://pictureserver.net/images/pic/d3/ee/undef_src_sa_picid_768978_x_1000_type_color_image.jpg?ver=11);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#page6 #bottom #three{
+    width: 30%;
+    height: 22vmax;
+    background-color: aqua;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://image.archify.com/blog/01-Four-Things-to-Know-While-Planning-for-a-Walk-in-Closet.jpg );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+
+#page6 h4{
+    color: white;
+    font-family: chloe;
+    font-weight: 500;
+    font-size: 3vmax;
+}
+
+#page6 h4::after{
+    width: 0;
+    content: '';
+    display: block;
+    height: 0.1vmax;
+    background-color: rgb(148,173,215);
+    transition: width .3s;
+    margin-top: 0.5vmax;
+}
+
+#page6 h4:hover{
+    cursor: pointer;
+    transform: translateX(1vmax);
+}
+
+#page6 h4:hover::after{
+    width: 100%;
+    transition: width .3s;
+    cursor: pointer;
+}
+
+
+
+
+
+
+#page7{
+    width: 100%;
+    text-align: center;
+    padding: 3vmax;
+    font-size: 3vmax;
+    font-family: 'Tektur', cursive;
+    color:rgb(148,173,215);
+    letter-spacing: 0.3vmax;
+}
+
+#page8{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(148,173,215);
+    padding: 3vmax;
+    border: 0.1vmax solid rgb(148,173,215);
+    border-radius: 50%;
+    gap: 2vmax;
+}
+
+#page8 .photo1:hover{
+    cursor: pointer;
+}
+
+#page8 .photo2:hover{
+    cursor: pointer;
+}
+
+#page8 .photo3:hover{
+    cursor: pointer;
+}
+
+#page8 .photo4:hover{
+    cursor: pointer;
+}
+
+#page8 .photo5:hover{
+    cursor: pointer;
+}
+
+
+#page8 .photo1{
+    width: 20vmax;
+    height: 20vmax;
+    background-image: url(https://images.unsplash.com/photo-1590086782957-93c06ef21604?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2vmax;
+    border: 0.1vmax solid rgb(148,173,215);
+    border-radius: 50px;
+
+}
+
+#page8 .photo2{
+    width: 20vmax;
+    height: 20vmax;
+    background-image: url(https://images.unsplash.com/photo-1582896911227-c966f6e7fb93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2vmax;
+    border: 0.1vmax solid rgb(148,173,215);
+    border-radius: 50px;
+
+
+}
+
+
+#page8 .photo3{
+    width: 20vmax;
+    height: 20vmax;
+    background-image: url(https://www.westend61.de/images/0001348314pw/portrait-of-beautiful-woman-against-white-background-EYF01660.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2vmax;
+    border: 0.1vmax solid rgb(148,173,215);
+    border-radius: 50px;
+
+
+}
+
+
+#page8 .photo4{
+    width: 20vmax;
+    height: 20vmax;
+    background-image: url(https://st3.depositphotos.com/34639946/36190/i/600/depositphotos_361909184-stock-photo-portrait-of-handsome-doctor-or.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2vmax;
+    border: 0.1vmax solid rgb(148,173,215);
+    border-radius: 50px;
+
+
+}
+
+#page8 .photo5{
+    width: 20vmax;
+    height: 20vmax;
+    background-image: url(https://img.freepik.com/premium-photo/serious-young-man-smiling-standing-against-white-background_262388-7213.jpg?w=2000);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2vmax;
+    border: 0.1vmax solid rgb(148,173,215);
+    border-radius: 50px;
+
+
+}
+
+#page8 h4{
+    font-family: 'Raleway', sans-serif;
+    padding-top: 2vmax;
+    font-size: 2vmax;
+    letter-spacing: 0.1vmax;
+    display: none;
+
+}
+
+#page8 h3{
+    font-family: 'Raleway', sans-serif;
+    padding-top: 2vmax;
+    font-size: 1.5vmax;
+    letter-spacing: 0.1vmax;
+    display: none;
+}
+
+#page8 i{
+    display: none;
+}
+
+
+#page9{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 6vmax;
+    padding-bottom: 10vmax;
+    color: white;
+    background-color: rgb(148,173,215);
+}
+
+#page9 h2{
+    font-family: 'Tektur', cursive;
+    font-weight: 300;
+    padding-bottom: 2vmax;
+    font-size: 3.2vmax;
+}
+
+#page9 h4{
+    font-family: 'Raleway', sans-serif;
+    padding: 3vmax;
+    font-size: 1.75vmax;
+    
+}
+
+#page9 h5{
+    font-weight: 300;
+    font-family: mont;
+    padding-bottom: 2vmax;
+    font-size: 1vmax;
+
+}
+
+#page9 input{
+    width: 100%;
+    background-color: transparent;
+    padding: 1vmax;
+    border: 0.1vmax solid white;
+    clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+}
+
+#page9 ::placeholder{
+    color: white;
+    font-size: 1.2vmax;
+    font-size: 100;
+    font-family: mont;
+}
+
+#page9 #email i{
+    padding-top: 2vmax;
+    font-size: 2vmax;
+    font-weight: 100;
+    position: relative;
+    left: 12vmax;
+    bottom: 2.5vmax;
+}
+
+@media(max-width:400px){
+    #page9 #email{
+        width: 60%;
+    }
+    #page6 #top{
+        flex-direction: column;
+        gap: 5vmax;
+    }
+    #page6 #top #one{
+        width: 100%;
+    }
+    #page6 #top #two{
+        width: 100%;
+    }
+    #page6 #top #three{
+        width: 100%;
+    }
+    #page6 #bottom{
+        flex-direction: column;
+        gap: 5vmax;
+    }
+    #page6 #bottom #one{
+        width: 100%;
+    }
+    
+    #page6 #bottom #two{
+        width: 100%;
+    }
+    
+    #page6 #bottom #three{
+        width: 100%;
+    }
+    
+}
+
+#page9 #email i:hover{
+    cursor: pointer;
+}
+
+#page9 #insta{
+    width: 100%;
+    padding: 1vmax;
+    font-size: 2vmax;
+    display: flex;
+    justify-content: center;
+    gap:1vmax;
+}
+
+#page9 #insta i{
+    border: 0.1vmax solid white;
+    border-radius: 50%;
+    padding: 0.7vmax;
+
+}
+
+#page9 #insta i:hover{
+    cursor: pointer;
+
+}
+
+#page9 #last h5:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
