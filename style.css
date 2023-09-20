@@ -170,11 +170,11 @@ nav #icons i:hover{
 }
 @media(max-width:400px){
     #page1 h1{
-        font-size: 4.7vmax;
+        font-size: 4vmax;
 
     }
     #page1 #btn{
-        margin-left: 29vmax;
+        margin-left:10vmax;
         gap: 0.2vmax;
     }
     #page1 #btn #l button{
@@ -229,22 +229,58 @@ nav #icons i:hover{
 
 #pageb{
     width: 100%;
-    padding: 5vmax;
+    padding: 10vmax 5vmax 5vmax 5vmax;
+    display: flex;
+    flex-direction: column;
+    gap: 8vmax;
+}
+
+.add{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4vmax;
+}
+
+.add2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    gap: 4vmax;
+}
+
+.add2 img{
+    margin: auto;
+}
+
+.add img{
+    margin: auto;
+}
+
+.add .one{
+    display: flex;
+    background-color: rgb(229,228,224);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+
+.add2 .two{
+    display: flex;
+    background-color: rgb(229,228,224);
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    
 }
 
 @media(max-width:400px){
-    #pageb #img1{
-        display: flex;
+    .add .one{
         flex-direction: column;
+        gap: 2vmax;
     }
-    #pageb #img2{
-        display: flex;
+    .add2 .two{
         flex-direction: column-reverse;
-    }
-
-    #pageb img{
-        width: 100%;
-        margin-left: 10.5vmax;
+        gap: 2vmax;
     }
 }
 
@@ -261,6 +297,7 @@ nav #icons i:hover{
     color: rgb(120,149,203);
     font-weight: 400;
     font-size: 4vmax;
+    padding-top: 2vmax;
 }
 
 #pageb #text p{
@@ -277,24 +314,6 @@ nav #icons i:hover{
 #pageb img{
     width: 20vmax;
 }
-
-#pageb #img1{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 4vmax;
-}
-
-#pageb #img2{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 7vmax;
-    gap: 4vmax;
-    
-
-}
-
 
 
 #page3{
@@ -547,8 +566,8 @@ nav #icons i:hover{
 }
 
 #page6 #top #one{
-    width: 30%;
-    height: 22vmax;
+    width: 28%;
+    height: 20vmax;
     background-color: aqua;
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.wakefit.co/blog/wp-content/uploads/2021/10/Artboard-15.jpg);
     background-size: cover;
@@ -561,8 +580,8 @@ nav #icons i:hover{
 }
 
 #page6 #top #two{
-    width: 30%;
-    height: 22vmax;
+    width: 28%;
+    height: 20vmax;
     background-color: aqua;
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm405-e07-mockup_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=a228de2e6b0ef5c460b6992d5e0c42d7);
     background-size: cover;
@@ -574,8 +593,8 @@ nav #icons i:hover{
 }
 
 #page6 #top #three{
-    width: 30%;
-    height: 22vmax;
+    width: 28%;
+    height: 20vmax;
     background-color: aqua;
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://images.unsplash.com/photo-1602872030490-4a484a7b3ba6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGRpbmluZyUyMHJvb20lMjB0YWJsZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80 );
     background-size: cover;
@@ -587,8 +606,8 @@ nav #icons i:hover{
 }
 
 #page6 #bottom #one{
-    width: 30%;
-    height: 22vmax;
+    width: 28%;
+    height: 20vmax;
     background-color: aqua;
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://flippers.co.za/wp-content/uploads/Snapinsta.app_1080_322121275_484255717223539_6333504529099423450_n-500x500.jpg);
     background-size: cover;
@@ -601,8 +620,8 @@ nav #icons i:hover{
 }
 
 #page6 #bottom #two{
-    width: 30%;
-    height: 22vmax;
+    width: 28%;
+    height: 20vmax;
     background-color: aqua;
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://pictureserver.net/images/pic/d3/ee/undef_src_sa_picid_768978_x_1000_type_color_image.jpg?ver=11);
     background-size: cover;
@@ -614,8 +633,8 @@ nav #icons i:hover{
 }
 
 #page6 #bottom #three{
-    width: 30%;
-    height: 22vmax;
+    width: 28%;
+    height: 20vmax;
     background-color: aqua;
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://image.archify.com/blog/01-Four-Things-to-Know-While-Planning-for-a-Walk-in-Closet.jpg );
     background-size: cover;
@@ -646,7 +665,6 @@ nav #icons i:hover{
 
 #page6 h4:hover{
     cursor: pointer;
-    transform: translateX(1vmax);
 }
 
 #page6 h4:hover::after{
@@ -663,7 +681,6 @@ nav #icons i:hover{
 #page7{
     width: 100%;
     text-align: center;
-    padding: 3vmax;
     font-size: 3vmax;
     font-family: 'Tektur', cursive;
     color:rgb(148,173,215);
@@ -673,13 +690,10 @@ nav #icons i:hover{
 #page8{
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: rgb(148,173,215);
-    padding: 3vmax;
-    border: 0.1vmax solid rgb(148,173,215);
-    border-radius: 50%;
+    padding: 5vmax 2vmax 5vmax 2vmax;
     gap: 2vmax;
 }
 
@@ -705,8 +719,8 @@ nav #icons i:hover{
 
 
 #page8 .photo1{
-    width: 20vmax;
-    height: 20vmax;
+    width: 16.9vmax;
+    height: 16.9vmax;
     background-image: url(https://images.unsplash.com/photo-1590086782957-93c06ef21604?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
     background-position: center;
     background-repeat: no-repeat;
@@ -722,8 +736,8 @@ nav #icons i:hover{
 }
 
 #page8 .photo2{
-    width: 20vmax;
-    height: 20vmax;
+    width: 16.9vmax;
+    height: 16.9vmax;
     background-image: url(https://images.unsplash.com/photo-1582896911227-c966f6e7fb93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80);
     background-position: center;
     background-repeat: no-repeat;
@@ -741,8 +755,8 @@ nav #icons i:hover{
 
 
 #page8 .photo3{
-    width: 20vmax;
-    height: 20vmax;
+    width: 16.9vmax;
+    height: 16.9vmax;
     background-image: url(https://www.westend61.de/images/0001348314pw/portrait-of-beautiful-woman-against-white-background-EYF01660.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -760,8 +774,8 @@ nav #icons i:hover{
 
 
 #page8 .photo4{
-    width: 20vmax;
-    height: 20vmax;
+    width: 16.9vmax;
+    height: 16.9vmax;
     background-image: url(https://st3.depositphotos.com/34639946/36190/i/600/depositphotos_361909184-stock-photo-portrait-of-handsome-doctor-or.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -778,8 +792,8 @@ nav #icons i:hover{
 }
 
 #page8 .photo5{
-    width: 20vmax;
-    height: 20vmax;
+    width: 16.9vmax;
+    height: 16.9vmax;
     background-image: url(https://img.freepik.com/premium-photo/serious-young-man-smiling-standing-against-white-background_262388-7213.jpg?w=2000);
     background-position: center;
     background-repeat: no-repeat;
